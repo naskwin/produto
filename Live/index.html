@@ -1,1 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
 
+<script>
+fetch("link.txt")
+  .then(r => r.text())
+  .then(url => {
+    location.href = url.trim();
+  });
+</script>
+
+</body>
+</html>
