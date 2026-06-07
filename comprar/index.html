@@ -7,7 +7,7 @@
 <body>
 
 <script>
-fetch('/Compre-Aqui/link.txt')
+fetch('./link.txt')
   .then(response => response.text())
   .then(link => {
     window.location.replace(link.trim());
