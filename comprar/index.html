@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>Redirecionando...</title>
-</head>
 <body>
 
 <script>
-fetch('./link.txt')
-  .then(response => response.text())
-  .then(link => {
-    window.location.replace(link.trim());
+fetch("link.txt")
+  .then(r => r.text())
+  .then(url => {
+    location.href = url.trim();
   });
 </script>
 
